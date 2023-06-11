@@ -36,4 +36,17 @@ window.onload = function (evt) {
   document.body.addEventListener("mousemove", (evt) => {
     const { clientX, clientY } = evt;
   });
+
+  //mouse enter and mouse leave
+  const destinations = document.querySelector(".destination");
+  for (let destination of destinations) {
+    destination.addEventListener("mouseenter", () => {
+      destination.style.fontWeight = "bold";
+    });
+    destination.addEventListener("mouseleave", () => {
+      setTimeout(() => {
+        destination.style.fontWeight = "initial";
+      }, 500);
+    });
+  }
 };
