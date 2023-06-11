@@ -14,4 +14,14 @@ window.onload = function (evt) {
       heading.textContent += text;
     });
   });
+
+  //click
+  document.body.addEventListener("click", (evt) => {
+    evt.target.classList.toggle("mirror");
+  });
+
+  //double click
+  document.body.addEventListener("dblclick", (evt) => {
+    evt.target.innerHTML = "";
+  });
 };
