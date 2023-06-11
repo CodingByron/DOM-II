@@ -38,7 +38,7 @@ window.onload = function (evt) {
   });
 
   //mouse enter and mouse leave
-  const destinations = document.querySelector(".destination");
+  const destinations = document.querySelectorAll(".destination");
   for (let destination of destinations) {
     destination.addEventListener("mouseenter", () => {
       destination.style.fontWeight = "bold";
