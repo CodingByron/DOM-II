@@ -24,4 +24,16 @@ window.onload = function (evt) {
   document.body.addEventListener("dblclick", (evt) => {
     evt.target.innerHTML = "";
   });
+
+  //keydown
+  window.addEventListener("keydown", (evt) => {
+    if (evt.key == 6) {
+      document.body.innerHTML = "<h1>Error 404</h1>";
+    }
+  });
+
+  //mouse move
+  document.body.addEventListener("mousemove", (evt) => {
+    const { clientX, clientY } = evt;
+  });
 };
